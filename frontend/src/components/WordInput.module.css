@@ -16,4 +16,6 @@
     align-items: center;
     box-shadow: 0 0 10px 5px rgba(194, 17, 17, 0.959);
     border-radius: 10px;
+    caret-color: white;
 }
+

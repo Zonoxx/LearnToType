@@ -12,7 +12,7 @@ function WordInput() {
 
   function inputHandler(event: React.ChangeEvent<HTMLInputElement>) {
     const currentValue = event.target.value;
-    console.log(currentValue);
+
     if (currentValue.toLowerCase() === wordContext!.word.toLowerCase()) {
       wordContext!.setWordHandler();
       wordContext!.increaseScore();
