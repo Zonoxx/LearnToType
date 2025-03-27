@@ -27,7 +27,7 @@ export const WordProvider = ({ children }: { children: ReactNode }) => {
   }
 
   function currentIndexHandler(letter: string){
-    if (letter === word[currentLetterIndex]) {
+    if (letter.toLowerCase() === word[currentLetterIndex].toLowerCase()) {
       setCurrentLetterIndex((prev) => prev + 1);
       return true;
     }
