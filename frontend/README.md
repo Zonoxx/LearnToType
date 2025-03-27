@@ -24,4 +24,6 @@ The current list is optimized for german, child-appropriate 4-5 letter words.
 - Icons als Hilfe optional einblendbar
 - Audio Ausgabe der Wörter (ggf. mit LLM)
 - Persistente Highscore mit Zeitstempel -> Button beendet und speichert Ergebnis
+- Mitlaufende Zeit und Anzeigen von Wörtern pro Minute
+- Optional für Wörter mit Groß- und Klein-Buchstaben
 - Resizable Interface?
