@@ -1,0 +1,10 @@
+.word-display{
+    font-size: 10rem;
+    font-weight: bold;
+    /*add gradient color*/
+    background: linear-gradient(90deg, rgba(255,0,0,1) 10%, rgba(255,154,0,1) 25%, rgba(208,222,33,1) 45%, rgba(79,220,74,1) 60%, rgba(47,201,226,1) 85%, rgba(28,127,238,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding: 2rem;
+}
