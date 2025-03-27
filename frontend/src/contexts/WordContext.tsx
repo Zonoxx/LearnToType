@@ -4,6 +4,7 @@ import { WORD_LIST } from "../utils/WordList";
 export interface WordContextType {
   word: string;
   score: number;
+  wordList: string[];
   increaseScore: () => void;
   setWordHandler: () => void;
 }
@@ -31,6 +32,7 @@ export const WordProvider = ({ children }: { children: ReactNode }) => {
     <WordContext.Provider
       value={{
         word,
+        wordList,
         score,
         increaseScore,
         setWordHandler,
