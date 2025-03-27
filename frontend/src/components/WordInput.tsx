@@ -12,11 +12,22 @@ function WordInput() {
 
   function inputHandler(event: React.ChangeEvent<HTMLInputElement>) {
     const currentValue = event.target.value;
+    const lastLetter = currentValue[currentValue.length - 1];
+    if (!wordContext!.currentIndexHandler(lastLetter)) {
+      setTypedWord(currentValue.slice(0, -1));
+    }
+
+    if(currentValue.length < wordContext!.currentLetterIndex) {
+      wordContext!.decreaseCurrentLetterIndex();
+    }
 
     if (currentValue.toLowerCase() === wordContext!.word.toLowerCase()) {
-      wordContext!.setWordHandler();
       wordContext!.increaseScore();
-      setTypedWord("");
+      setTypedWord(currentValue);
+      setTimeout(() => {
+        wordContext!.setWordHandler();
+        setTypedWord("");
+      }, 1000);
     } else {
       setTypedWord(currentValue);
     }

@@ -1,11 +1,8 @@
 .score {
     font-size: 8rem;
     font-weight: bold;
-    /* Add gradient color */
-    background: linear-gradient(90deg, rgba(255,0,0,1) 10%, rgba(255,154,0,1) 25%, rgba(208,222,33,1) 45%, rgba(79,220,74,1) 60%, rgba(47,201,226,1) 85%, rgba(28,127,238,1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: rgba(194, 17, 17, 0.959);
+    text-align: center;
     padding: 2rem;
     border-radius: 10px;
     width: 10rem; /* Set width */
